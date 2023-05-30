@@ -1,0 +1,5 @@
+@import"../../mixins.scss";
+.root{
+   width: 100%;
+   @include flex-col-start;
+}

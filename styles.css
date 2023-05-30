@@ -1,3 +1,11 @@
 @import "vendor/normalize.css";
+@import "scss/base/fonts.css";
+@import "scss/base/fonts.css.map"; 
 @import "scss/base.css";
-@import "scss/base.css.map"
+@import "scss/base.css.map";
+@import "scss/blocks/root/root.css";
+@import "scss/blocks/root/root.css.map";
+@import "scss/blocks/header/header.css";
+@import "scss/blocks/header/header.css.map";
+@import "scss/blocks/nav/nav.css";
+@import "scss/blocks/nav/nav.css.map";
