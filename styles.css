@@ -9,3 +9,8 @@
 @import "scss/blocks/header/header.css.map";
 @import "scss/blocks/nav/nav.css";
 @import "scss/blocks/nav/nav.css.map";
+@import "scss/blocks/main/main.css";
+@import "scss/blocks/main/main.css.map";
+@import "scss/blocks/about/about.css";
+@import "scss/blocks/about/about.css.map";
+
