@@ -6,6 +6,11 @@
   z-index: 2;
 }
 
+.nav__item-container {
+  margin: 0;
+  padding: 0;
+}
+
 .nav--opened {
   flex-direction: column;
   align-items: center;
