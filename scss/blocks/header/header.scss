@@ -40,6 +40,8 @@
   color: white;
   font-family: $playfair;
   font-size: 60px;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
 .header__description {
@@ -50,6 +52,7 @@
   color: white;
   font-family: $open-sans;
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .header__container_arrow-down {
