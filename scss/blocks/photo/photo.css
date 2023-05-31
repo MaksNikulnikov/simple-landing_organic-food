@@ -1,0 +1,79 @@
+.photo {
+  width: 100%;
+  min-height: 707px;
+}
+
+.photo__container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 386px);
+}
+
+.photo__item {
+  background-size: cover;
+}
+
+.photo__item:nth-of-type(1) {
+  background-image: url("/img/restaurant-love-romantic-dinner.jpg");
+  grid-row: span 2;
+  grid-column: span 2;
+  background-position-y: 70%;
+}
+
+.photo__item:nth-of-type(2) {
+  background-image: url("/img/pexels-photo-5491337.jpeg");
+  grid-column: span 2;
+  background-position-y: -112%;
+}
+
+.photo__item:nth-of-type(3) {
+  background-image: url("/img/pexels-photo-2762942.jpeg");
+  grid-column: span 1;
+}
+
+.photo__item:nth-of-type(4) {
+  background-image: url("/img/pexels-marta-dzedyshko-2067396.jpg");
+  background-position-y: 70%;
+  grid-column: span 1;
+}
+
+@media (max-width: 1200px) {
+  .photo {
+    min-height: 637px;
+  }
+}
+@media (max-width: 992px) {
+  .photo {
+    min-height: 1786px;
+  }
+  .photo__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 450px);
+  }
+}
+@media (max-width: 768px) {
+  .photo {
+    min-height: 2352px;
+  }
+  .photo__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 670px 332px 675px 675px;
+  }
+  .photo__item:nth-of-type(1) {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  .photo__item:nth-of-type(2) {
+    grid-column: unset;
+  }
+}
+@media (max-width: 576px) {
+  .photo {
+    min-height: 1481px;
+  }
+  .photo__container {
+    grid-template-rows: 422px 209px 425px 425px;
+  }
+}/*# sourceMappingURL=photo.css.map */
