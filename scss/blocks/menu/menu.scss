@@ -1,0 +1,95 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.menu {
+  min-height: 771px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: $max-content-width;
+  width: 100%;
+}
+
+.menu__title {
+  color: $font-color-main;
+  margin-top: 60px;
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+.menu__subtitle {
+  color: $font-color-main;
+  margin-top: 20px;
+  font-family: $playfair;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.menu__item-container {
+  @include clear-ul;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.menu__item {
+  @include flex-col-start;
+  padding: 30px;
+}
+.menu__item_title {
+  color: $font-color-main;
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+.menu__item_text {
+  margin-top: 20px;
+  color: $font-color-main;
+  font-family: $open-sans;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: $large-screen) {
+  .menu {
+    max-width: $large-medium-content-width;
+  }
+}
+
+@media (max-width: $medium-screen) {
+  .menu {
+    max-width: $medium-small-content-width;
+  }
+  .menu__item-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: $small-screen) {
+  .menu {
+    max-width: $small-tablet-content-width;
+  }
+  .menu__item-container {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .menu {
+    max-width: $min-content-width;
+  }
+  .menu__subtittle {
+    font-size: 36px;
+  }
+  .menu__item_text {
+    text-align: center;
+  }
+}
