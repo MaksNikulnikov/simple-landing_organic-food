@@ -2,4 +2,5 @@
 
 .main{
     @include flex-col-start;
+    @include full-width;
 }
