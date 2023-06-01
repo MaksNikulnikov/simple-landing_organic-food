@@ -75,12 +75,6 @@
   letter-spacing: 2px;
 }
 
-@media (max-width: $large-screen) {
-}
-
-@media (max-width: $medium-screen) {
-}
-
 @media (max-width: $small-screen) {
   .contact-us__form {
     max-width: 530px;
@@ -94,7 +88,4 @@
   .contact-us__form {
     max-width: 330px;
   }
-}
-
-@media (max-width: $phone-screen) {
 }
