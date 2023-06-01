@@ -1,4 +1,5 @@
 @import "vendor/normalize.css";
+@import "vendor/itc-slider/its-slider.css";
 @import "scss/base/fonts.css";
 @import "scss/base/fonts.css.map";
 @import "scss/base/fonts.css.map";
@@ -30,3 +31,4 @@
 @import "scss/blocks/contact-us/contact-us.css";
 @import "scss/blocks/footer/footer.css";
 @import "scss/blocks/footer/footer.css.map";
+
