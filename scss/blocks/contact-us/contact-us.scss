@@ -1,0 +1,100 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.contact-us {
+  min-height: 500px;
+  @include flex-col-start;
+  @include full-width;
+}
+.contact-us__title {
+  margin-top: 76px;
+  color: $font-color-main;
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.contact-us__subtitle {
+  margin-top: 20px;
+  color: $font-color-main;
+  font-family: $playfair;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.contact-us__form {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 560px;
+  width: 100%;
+}
+.contact-us__form_input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 10px 12px;
+  border: 1px rgb(179, 179, 179) solid;
+  color: black;
+  font-family: $open-sans;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.contact-us__form_check-box {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 13px;
+  height: 13px;
+}
+.contact-us__form_check-box-label {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: $font-color-main;
+  font-family: $open-sans;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-us__link {
+  text-decoration: none;
+}
+.contact-us__form_submit-btn {
+  display: block;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: black 2px solid;
+  color: black;
+  font-family: $open-sans;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media (max-width: $large-screen) {
+}
+
+@media (max-width: $medium-screen) {
+}
+
+@media (max-width: $small-screen) {
+  .contact-us__form {
+    max-width: 530px;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .contact-us__subtitle {
+    font-size: 36px;
+  }
+  .contact-us__form {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: $phone-screen) {
+}

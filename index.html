@@ -218,7 +218,13 @@
             <section class="contact-us">
                 <h2 class="contact-us__title">CONTACT US</h2>
                 <span class="contact-us__subtitle">Get in touch</span>
-                <form action="get" class="contact-us__form"></form>
+                <form action="/script.js" class="contact-us__form">
+                    <input class= "contact-us__form_input" type="text" name="name" value="Enter your Name"><br>
+                    <input class= "contact-us__form_input" type="email" name="email" value="Enter a valid email address"><br><br>
+                    <input class= "contact-us__form_check-box" type="checkbox" name="accept" value="accept">
+                    <label class= "contact-us__form_check-box-label" for="accept"> I accept the <a class="contact-us__link" href="#">Terms of Service</a></label>
+                    <input class= "contact-us__form_submit-btn" type="submit" name="submit" value="Submit">
+                </form>
             </section>
         </main>
         <footer class="footer">
