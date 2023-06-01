@@ -14,15 +14,16 @@
 <body>
     <div class="root">
         <header class="header">
-            <nav class="nav">
-                <div class="nav__container hidden">
-                    <ul class="nav__item-container">
-                        <li class="nav__item"><span class="nav__item_text">home</span></li>
-                    </ul>
+            <nav class="nav ">
+                <div class="nav__container">
                     <div class="nav__close-btn"></div>
+                    <ul class="nav__item-container">
+                        <li class="nav__item">
+                            <span class="nav__item_text">home</span>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="nav__burger-btn"></div>
+                <div class="nav__burger-btn "></div>
             </nav>
             <article class="header__container">
                 <img class="header__logo" src="img/logo.png" alt="The Best Restaurant organic food. since 2005"></img>
@@ -219,11 +220,13 @@
                 <h2 class="contact-us__title">CONTACT US</h2>
                 <span class="contact-us__subtitle">Get in touch</span>
                 <form action="/script.js" class="contact-us__form">
-                    <input class= "contact-us__form_input" type="text" name="name" value="Enter your Name"><br>
-                    <input class= "contact-us__form_input" type="email" name="email" value="Enter a valid email address"><br><br>
-                    <input class= "contact-us__form_check-box" type="checkbox" name="accept" value="accept">
-                    <label class= "contact-us__form_check-box-label" for="accept"> I accept the <a class="contact-us__link" href="#">Terms of Service</a></label>
-                    <input class= "contact-us__form_submit-btn" type="submit" name="submit" value="Submit">
+                    <input class="contact-us__form_input" type="text" name="name" value="Enter your Name"><br>
+                    <input class="contact-us__form_input" type="email" name="email"
+                        value="Enter a valid email address"><br><br>
+                    <input class="contact-us__form_check-box" type="checkbox" name="accept" value="accept">
+                    <label class="contact-us__form_check-box-label" for="accept"> I accept the <a
+                            class="contact-us__link" href="#">Terms of Service</a></label>
+                    <input class="contact-us__form_submit-btn" type="submit" name="submit" value="Submit">
                 </form>
             </section>
         </main>
@@ -232,6 +235,7 @@
                 Sample text. Click to select the text box. Click again or double click to start editing the text.
             </p>
         </footer>
+        <script src="navScript.js"></script>
 
     </div>
 
