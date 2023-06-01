@@ -1,0 +1,122 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.facts {
+  display: flex;
+  min-height: 479px;
+  max-width: $max-content-width;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.facts__container {
+  @include clear-ul;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 810px;
+  width: 100%;
+  align-items: center;
+}
+
+.facts__item {
+  width: 100%;
+  padding: 30px 10px;
+  @include flex-col-start;
+}
+
+.facts__item_icon {
+  width: 64px;
+  height: 64px;
+}
+
+.facts__item_numbers {
+  margin-top: 28px;
+  font-family: $playfair;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $font-color-main;
+}
+
+.facts__item_text {
+  margin: 20px 0;
+  color: $font-color-main;
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 300;
+}
+
+.facts__title {
+  box-sizing: border-box;
+  padding: 30px;
+  padding-top: 115px;
+  width: 279px;
+  height: 279px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+@media (max-width: $large-screen) {
+  .facts {
+    max-width: $large-medium-content-width;
+    min-height: 500px;
+  }
+
+  .facts__container {
+    max-width: 668px;
+  }
+
+  .facts__title {
+    width: 230px;
+    height: 233px;
+    padding-top: 93px;
+  }
+}
+
+@media (max-width: $medium-screen) {
+  .facts {
+    max-width: $medium-small-content-width;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 957px;
+  }
+
+  .facts__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: $small-screen) {
+  .facts {
+    max-width: $small-tablet-content-width;
+    min-height: 1223px;
+  }
+  .facts__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .facts {
+    max-width: $min-content-width;
+  }
+
+  .facts__item_text {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $phone-screen) {
+}
