@@ -1,5 +1,5 @@
 .header {
-  background-image: url("/img/pexels-photo-3218467.jpeg");
+  background-image: url("../../../img/pexels-photo-3218467.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -66,7 +66,7 @@
   margin-top: 96px;
   color: white;
   background-position: center;
-  background: url(/img/icon/header-triangle.svg) no-repeat;
+  background: url(../../../img/icon/header-triangle.svg) no-repeat;
 }
 
 @media (max-width: 1200px) {

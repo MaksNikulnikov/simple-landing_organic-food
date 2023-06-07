@@ -33,15 +33,15 @@
 }
 
 .shorts__item:nth-of-type(1) .shorts__item_image {
-  background-image: url("/img/pexels-marta-dzedyshko-2067396.jpg");
+  background-image: url("../../../img/pexels-marta-dzedyshko-2067396.jpg");
 }
 
 .shorts__item:nth-of-type(3) .shorts__item_image {
-  background-image: url("/img/pexels-photo-4099237.jpeg");
+  background-image: url("../../../img/pexels-photo-4099237.jpeg");
 }
 
 .shorts__item:nth-of-type(5) .shorts__item_image {
-  background-image: url("/img/pexels-photo-949069.jpeg");
+  background-image: url("../../../img/pexels-photo-949069.jpeg");
 }
 
 .shorts__article {
